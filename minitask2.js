@@ -1,17 +1,17 @@
 
 // Ambil elemen form, button, dan output
-const form2 = document.getElementById('form2');
-const submitBtn = document.getElementById('submitBtn');
-const output = document.getElementById('output');
+const form2 = document.getElementById("form2");
+const submitBtn = document.getElementById("submitBtn");
+const output = document.getElementById("output");
 
 // Tambahkan onclick listener pada button
-submitBtn.addEventListener('click', function(event) {
+submitBtn.addEventListener("click", function(event) {
   event.preventDefault(); // Berhentikan perilaku default form
 
   // Ambil nilai input dalam bentuk object JSON
   const jsonData = {
-    username: document.getElementById('username').value,
-    password: document.getElementById('password').value
+    username: document.getElementById("username").value,
+    password: document.getElementById("password").value
   };
 
   // Ubah object JSON menjadi URL-encoded string
